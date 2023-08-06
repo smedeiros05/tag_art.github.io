@@ -1,9 +1,9 @@
 ---
-title: Products
-subtitle: Check out our range of products
+title: Produtos
+subtitle: Olha o nosso catálogo de produtos
 layout: product-category
 show_sidebar: false
 sort: price
 ---
 
-This is an example products page you can use to display a simple listing of your products and their ratings and reviews.
+Este é um exemplo de página de produtos que você pode usar para exibir uma listagem simples de seus produtos e suas classificações e análises.

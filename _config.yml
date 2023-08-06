@@ -1,17 +1,17 @@
 # Site Settings
 lang: en
-title: Bulma Clean Theme
+title: TagART Personalizações
 tagline: Bulma Clean Theme
 email: your-email@domain.com
 description: >
-  The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites
+  Site de portfólio de produtos sublimáticos
 baseurl: "/bulma-clean-theme"
 url: "https://www.csrhymes.com"
 permalink: pretty
 #favicon: /path/to/favicon.png
 gh_sponsor: chrisrhymes
 #hide_share_buttons: true
-#theme_color: '#eeeeee'
+theme_color: "#F4D160"
 #fixed_navbar: top
 #direction: one of <ltr, rtl, auto>, default: ltr
 
@@ -25,7 +25,6 @@ disqus:
   # shortname: my_disqus_shortname
   shortname: csrhymes
 
-
 plugins:
   - jekyll-sitemap
   - jekyll-paginate
@@ -34,7 +33,7 @@ plugins:
   - kramdown-parser-gfm
   - jekyll-redirect-from
 
-exclude: 
+exclude:
   - Gemfile
   - clean-theme.gemspec
   - Gemfile.lock
@@ -53,14 +52,12 @@ sass:
 #google_analytics: UA-code-here
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "pages"
     values:
       show_sidebar: true
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
@@ -75,7 +72,7 @@ highlighter: rouge
 footer_menu: example_footer_menu
 
 collections:
-  products: 
+  products:
     output: true
     layout: product
     image: https://via.placeholder.com/800x600

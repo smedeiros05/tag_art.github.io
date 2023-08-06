@@ -1,39 +1,59 @@
+<head>
+    <!-- Other meta tags and links -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+</head>
 {% if page.callouts %}
-    {% assign callouts=site.data.[page.callouts] %}
-    <section class="hero {% if callouts.height %} {{ callouts.height }} {% else %} is-medium {% endif %} {{ callouts.style }}">
+
+<body>
+    <section class="hero">
         <div class="hero-body">
             <div class="container">
                 <div class="columns is-multiline is-centered">
-                    {% for callout in callouts.items %}
+                    <section class="carousel">
                         <div class="column is-4 has-text-centered">
-                            {% if callout.icon %}
-                            <div class="icon callout-icon">
-                            {% if callout.icon_brand %}
-                                <i class="fab {{ callout.icon }} fa-4x"></i>
-                            {% else %}
-                                <i class="fas {{ callout.icon }} fa-4x"></i>
-                            {% endif %}
-                            </div>
-                            {% endif %}
-                            <p class="title is-5">{{ callout.title }}</p>
-                            <p class="subtitle is-5">{{ callout.subtitle }}</p>
-                            
-                            {% if callout.description %}
-                            <div class="content">
-                                <p>{{ callout.description | newline_to_br }}</p>
-                            </div>
-                            {% endif %}
-
-                            {% if callout.call_to_action_name %}
-                            <a href="{{ callout.call_to_action_link | relative_url }}" class="button is-primary">
-                                {{ callout.call_to_action_name }}
+                            <a href="link_para_produto1">
+                                <img src="blog-post-series.jpg" alt="Produto 1">
                             </a>
-                            {% endif %}
                         </div>
-                    {% endfor %}
+                        <div class="column is-4 has-text-centered">
+                            <a href="link_para_produto2">
+                                <img src="images/santo_vaporwave.jpeg" alt="Produto 2">
+                            </a>
+                        </div>
+                        <div class="column is-4 has-text-centered">
+                            <a href="link_para_produto2">
+                                <img src="images/chess4.jpeg" alt="Produto 3">
+                            </a>
+                        </div>
+                        <div class="column is-4 has-text-centered">
+                            <a href="link_para_produto2">
+                                <img src="images/chess4.jpeg" alt="Produto 4">
+                            </a>
+                        </div>
+                        <div class="column is-4 has-text-centered">
+                            <a href="link_para_produto2">
+                                <img src="images/chess4.jpeg" alt="Produto 5">
+                            </a>
+                        </div>
+                        <div class="column is-4 has-text-centered">
+                            <a href="link_para_produto2">
+                                <img src="images/chess4.jpeg" alt="Produto 6">
+                            </a>
+                        </div>
+                        <div class="column is-4 has-text-centered">
+                            <a href="link_para_produto2">
+                                <img src="ninja bunny.jpeg" alt="Produto 7">
+                            </a>
+                        </div>
+                    </section>
+                    <!-- Adicione mais colunas aqui para mais produtos -->
                 </div>
             </div>
         </div>
     </section>
-{% endif %}
+    <script src="slick/slick.js">
 
+    </script>
+</body>
+{% endif %}
